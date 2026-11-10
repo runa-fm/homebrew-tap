@@ -1,26 +1,26 @@
 class Runa < Formula
   desc "Fast and lightweight terminal file manager written in Rust"
   homepage "https://github.com/runa-fm/runa"
-  version "0.15.5"
+  version "0.15.6"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/runa-fm/runa/releases/download/v#{version}/runa-macos-aarch64.tar.gz"
-      sha256 "fa15dbcfd8f8d11e90d8cd26f2fc2d78a1b86025ec86b3feb7a7f12b8208766a"
+      sha256 "df612d8ed7e0800e5bf39d9145c791f2ca80642790a74c2313ad056083b83351"
     else
       url "https://github.com/runa-fm/runa/releases/download/v#{version}/runa-macos-x86_64.tar.gz"
-      sha256 "5798362561a2c4a8a7f72c7f7a7ad7f7fd7502b314fd87cbef1bddca66901eef"
+      sha256 "6aa4bfffa2e27d69aee951f6af57e6cb5e55096206cfb2f13734e0a1ae429d0d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/runa-fm/runa/releases/download/v#{version}/runa-linux-aarch64-gnu.tar.gz"
-      sha256 "0fe679756763916d5a814fcb058148e8f9be69cc650f78183997d0db86c5cac0"
+      sha256 "d494aa0c98dcf47da4d7e2afa4f37825faf9fb62fd8d2a76f22f04706e55fdc4"
     else
       url "https://github.com/runa-fm/runa/releases/download/v#{version}/runa-linux-x86_64-gnu.tar.gz"
-      sha256 "fd995ef9e45e5b82f0a18da2311d9a3cab152b27034ac9e2a2b89e6e1140114d"
+      sha256 "5900a2ffcace843cc8eb906af5e87629dcbfc367c26b628bbdccf7349ccf5163"
     end
   end
 
